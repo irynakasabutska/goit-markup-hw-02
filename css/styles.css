@@ -8,7 +8,10 @@
     --color-foot-cont: rgba(255, 255, 255, 0.6);
     --color-box-shadow: rgba(0, 0, 0, 0.15);
     --section-three: #F5F4FA;
-
+    --hover-blue: #188CE8;
+    --shadow-x: rgba(0, 0, 0, 0.1);
+    --shadow-y: rgba(0, 0, 0, 0.08);
+    --shadow-z: rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -26,10 +29,19 @@ a {
     color: inherit;
 }
 
-.hide{
-    visibility: hidden;
-
-}
+/*hide h2*/
+.visually-hidden { 
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -74,6 +86,7 @@ a {
 
 .firstbutton {
     position: absolute;
+    
     width: 200px;
     height: 50px;
     left: 700px;
@@ -94,6 +107,20 @@ a {
     color: var(--color-white);
 
     border: none;
+    cursor: pointer;
+}
+
+.firstbutton:hover,
+.firstbutton:focus {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+
+    background: var(--hover-blue);
+    box-shadow: 0px 4px 4px var(--color-box-shadow);
+    border-radius: 4px;
 }
 
 .button {
@@ -108,12 +135,17 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
     text-align: center;
+    border-radius: 4px;
+
 }
 
 .button:hover,
 .button:focus {
     background-color: var(--color-blue);
     color: var(--color-white);
+    border: none;
+    box-shadow: 0px 3px 1px var(--shadow-x), 0px 1px 2px var(--shadow-y), 0px 2px 2px var(--shadow-z);
+    border-radius: 4px;
 }
 
 .title-article {
@@ -138,10 +170,12 @@ a {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    /*margin-top: 94;*/
 }
 
 .section-three {
     background-color: var(--section-three);
+    /*margin-bottom: 0px;*/
 }
 
 .title-developers {
@@ -195,11 +229,13 @@ a {
 
 .googlemap {
     color: var(--color-white);
+    font-weight: 400;
 }
 
 .link {
     line-height: 1.15;
 }
+
 .active,
 .link:hover,
 .link:focus {
@@ -212,6 +248,15 @@ a {
 
 .contact-foot {
     color: var(--color-foot-cont);
+    font-weight: 400;
 }
 
+.nav-head {
+    font-weight: 500;
+}
+
+.developers {
+    background-color: var(--color-white);
+
+}
 
