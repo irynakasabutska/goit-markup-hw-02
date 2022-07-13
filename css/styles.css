@@ -12,6 +12,7 @@
     --shadow-x: rgba(0, 0, 0, 0.1);
     --shadow-y: rgba(0, 0, 0, 0.08);
     --shadow-z: rgba(0, 0, 0, 0.12);
+    --border-head: #ECECEC;
 }
 
 body {
@@ -27,6 +28,10 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.head {
+    border: 1px solid var(--border-head);
 }
 
 /*hide h2*/
