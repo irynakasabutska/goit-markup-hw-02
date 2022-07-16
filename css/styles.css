@@ -30,8 +30,33 @@ a {
     color: inherit;
 }
 
-.header-border {
-    border: 1px solid var(--border-head);
+.header {
+    border-bottom: 1px solid var(--border-head);
+}
+
+/*.header > .link {
+    display: flex;
+    flex-direction: row
+}*/
+.nav-head {
+    font-weight: 500;
+    
+}
+/*.flexy {
+    
+    display: flex;
+    flex-direction: row;
+    
+}*/
+
+.flexibility {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+
 }
 
 /*hide h2*/
@@ -67,8 +92,8 @@ a {
 
 .hero {
     background-color: var(--hero-footer);
-    
-    /*width: 1600px;*/
+    background-image: url(/images/hero.jpg);
+    width: 1600px;
     height: 600px;
     left: 0px;
     top: 80px;
@@ -256,9 +281,7 @@ a {
     font-weight: 400;
 }
 
-.nav-head {
-    font-weight: 500;
-}
+
 
 .developers {
     background-color: var(--color-white);
