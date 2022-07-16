@@ -92,7 +92,7 @@ a {
 
 .hero {
     background-color: var(--hero-footer);
-    background-image: url(/images/hero.jpg);
+    background-image: url(./images/hero.jpg);
     width: 1600px;
     height: 600px;
     left: 0px;
